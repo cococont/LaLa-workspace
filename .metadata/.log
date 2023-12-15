@@ -1832,3 +1832,662 @@ java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\o
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SESSION 2023-12-11 14:47:11.711 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-12-11 14:47:37.411
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-11 14:48:00.597
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-12-11 14:52:12.418
+!MESSAGE Unable to compute end of document
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:268)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1122)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:246)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:863)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:334)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toPosition(LSPEclipseUtils.java:183)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:44)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-11 14:54:24.082
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-11 15:04:26.864
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY Activator 4 0 2023-12-11 15:09:56.103
+!MESSAGE NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because "this.this$0.applications" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because "this.this$0.applications" is null
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel$2.bundleChanged(LocalBootDashModel.java:157)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:949)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-11 15:11:23.702
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-11 15:33:28.804
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 4 4 2023-12-11 15:44:39.622
+!MESSAGE Could not create action delegate for id: org.springsource.ide.eclipse.commons.launch.stop.action
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2023-12-11 15:44:39.623
+!MESSAGE プラグイン "org.springsource.ide.eclipse.commons.ui" は、クラス "org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate" をインスタンス化できませんでした。
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:214)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.<init>(LaunchList.java:74)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.<init>(LiveProcessTracker.java:49)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.getInstance(LiveProcessTracker.java:43)
+	at org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate.createList(StopProcessPullDownToolbarDelegate.java:34)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.<init>(AbstractLaunchToolbarPulldown.java:52)
+	at org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate.<init>(StopProcessPullDownToolbarDelegate.java:18)
+	... 43 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.<init>(LaunchList.java:74)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.<init>(LiveProcessTracker.java:49)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.getInstance(LiveProcessTracker.java:43)
+	at org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate.createList(StopProcessPullDownToolbarDelegate.java:34)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.<init>(AbstractLaunchToolbarPulldown.java:52)
+	at org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate.<init>(StopProcessPullDownToolbarDelegate.java:18)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.lambda$0(WorkbenchPlugin.java:287)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:214)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 4 2023-12-11 15:44:39.751
+!MESSAGE Could not create action delegate for id: org.springsource.ide.eclipse.commons.launch.relaunch.action
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2023-12-11 15:44:39.751
+!MESSAGE プラグイン "org.springsource.ide.eclipse.commons.ui" は、クラス "org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate" をインスタンス化できませんでした。
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:157)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:609)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:405)
+	at org.eclipse.jface.dialogs.MessageDialog.openInformation(MessageDialog.java:502)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:216)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.<init>(LaunchList.java:74)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.<init>(LiveAndDeadProcessTracker.java:77)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.getInstance(LiveAndDeadProcessTracker.java:69)
+	at org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate.createList(RelaunchProcessPullDownToolbarDelegate.java:29)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.<init>(AbstractLaunchToolbarPulldown.java:52)
+	at org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate.<init>(RelaunchProcessPullDownToolbarDelegate.java:15)
+	... 51 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.<init>(LaunchList.java:74)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.<init>(LiveAndDeadProcessTracker.java:77)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.getInstance(LiveAndDeadProcessTracker.java:69)
+	at org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate.createList(RelaunchProcessPullDownToolbarDelegate.java:29)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.<init>(AbstractLaunchToolbarPulldown.java:52)
+	at org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate.<init>(RelaunchProcessPullDownToolbarDelegate.java:15)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:157)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:609)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:405)
+	at org.eclipse.jface.dialogs.MessageDialog.openInformation(MessageDialog.java:502)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:216)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-11 15:47:47.464
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-11 16:05:19.638
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-11 16:17:41.791
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-11 16:30:01.418
+!MESSAGE ワークスペースの保存の問題
+
+!ENTRY org.eclipse.ui.ide 4 1 2023-12-11 16:30:01.424
+!MESSAGE ワークベンチの状態を保存中に問題が発生しました。
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2023-12-11 16:30:01.424
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1718)
+	at org.eclipse.core.internal.resources.SaveManager.lambda$7(SaveManager.java:1808)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2183)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2149)
+	at java.base/java.util.stream.AbstractTask.compute(AbstractTask.java:327)
+	at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:754)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SESSION 2023-12-12 10:07:11.985 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-12-12 10:07:15.093
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-12 14:13:26.740
+!MESSAGE ワークスペースの保存の問題
+
+!ENTRY org.eclipse.ui.ide 4 1 2023-12-12 14:13:26.757
+!MESSAGE ワークベンチの状態を保存中に問題が発生しました。
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2023-12-12 14:13:26.757
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1718)
+	at org.eclipse.core.internal.resources.SaveManager.lambda$7(SaveManager.java:1808)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2183)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2149)
+	at java.base/java.util.stream.AbstractTask.compute(AbstractTask.java:327)
+	at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:754)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SESSION 2023-12-12 14:13:29.725 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-12-12 14:13:33.232
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY Activator 4 0 2023-12-12 14:24:17.623
+!MESSAGE NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because "this.this$0.applications" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because "this.this$0.applications" is null
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel$2.bundleChanged(LocalBootDashModel.java:157)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:949)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-12 14:27:28.617
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-12 14:35:07.700
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-12 14:48:53.812
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-12 14:59:09.065
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-12 15:31:27.846
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-12 15:51:22.076
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2023-12-12 16:28:16.671
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers.snap (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:155)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1851)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1932)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1264)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1205)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-12-12 16:29:28.189
+!MESSAGE ワークスペースの保存の問題
+
+!ENTRY org.eclipse.ui.ide 4 1 2023-12-12 16:29:28.191
+!MESSAGE ワークベンチの状態を保存中に問題が発生しました。
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2023-12-12 16:29:28.192
+!MESSAGE '/Servers' のメタデータを書き込みできませんでした。
+!STACK 0
+java.io.FileNotFoundException: C:\workspaces\LaLa-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Servers\.markers (指定されたパスが見つかりません。)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1718)
+	at org.eclipse.core.internal.resources.SaveManager.lambda$7(SaveManager.java:1808)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2183)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Nodes.java:2149)
+	at java.base/java.util.stream.AbstractTask.compute(AbstractTask.java:327)
+	at java.base/java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:754)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)

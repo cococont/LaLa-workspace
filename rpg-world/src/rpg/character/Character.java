@@ -1,9 +1,11 @@
 package rpg.character;
 
+import rpg.Player;
 import rpg.Runnable;
 import rpg.monster.Monster;
 
-public abstract class Character implements Runnable {
+public abstract class Character extends Player
+							implements Runnable {
 	private String name;
 	private int hp;
 	
